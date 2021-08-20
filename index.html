@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html id='html' lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/1963b7b707.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>makr</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="logo"></div>
+        <p class="logoText">makr</p>
+      </div>
+    </div>
+
+    <div class="heroWrapper">
+      <div class="container">
+        <h1>Get paid for the work you <span>love</span> to do.</h1>
+        <p>
+          The 9-5 grind is so last century. We believe in living life on your
+          own terms. Whether you're looking to escape the rat race or set up a
+          side hustle, we've got you covered.
+        </p>
+        <div id='btn' class="btn"><div id='switch' class="switch"></div></div>
+      </div>
+    </div>
+
+    <div class="featureWrapper">
+      <div class="container">
+        <div class="featureContent flexEnd">
+          <div class="icon passions"></div>
+          <div class="featureText">
+            <h3>Indulge your passions</h3>
+            <p>
+              Your passions shouldn't be just for the weekend. Earn a living
+              doing what you love.
+            </p>
+          </div>
+        </div>
+        <div class="featureContent">
+          <div class="icon freedom"></div>
+          <div class="featureText">
+            <h3>Gain financial freedom</h3>
+            <p>
+              Start making money work for you. There's nothing quite like
+              earning while you sleep.
+            </p>
+          </div>
+        </div>
+        <div class="featureContent flexEnd">
+          <div class="icon lifestyle"></div>
+          <div class="featureText">
+            <h3>Choose your lifestyle</h3>
+            <p>
+              Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
+              your week.
+            </p>
+          </div>
+        </div>
+        <div class="featureContent">
+          <div class="icon anywhere"></div>
+          <div class="featureText">
+            <h3>Work from anywhere</h3>
+            <p>
+              Selling online means not being pinned down. Want to work AND
+              travel? Go for it!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricingWrapper">
+      <div class="container">
+        <h2>Our pricing plans</h2>
+        <p class="description">
+          We only make money when our creators make money. Our plans are always
+          affordable, and it's completely free to get started.
+        </p>
+        <div class="priceBox">
+          <p class="title">Dip your toe</p>
+          <p>
+            Just getting started? No problem at all! Our free plan will take you
+            a long way.
+          </p>
+          <p class="price">Free</p>
+          <ul>
+            <li><i class="fas fa-check"></i>Unlimited products</li>
+            <li><i class="fas fa-check"></i>Basic analytics</li>
+            <li><i class="fas fa-check"></i>Limited marketplace exposure</li>
+            <li><i class="fas fa-check"></i>10% fee per transaction</li>
+          </ul>
+        </div>
+        <div class="priceBox">
+          <p class="title">Dive right in</p>
+          <p>
+            Ready for the big time? Our paid plan will help you take your
+            business to the next level.
+          </p>
+          <p class="price">$25.00 <span class="subText">/month</span></p>
+          <ul>
+            <li><i class="fas fa-check"></i>Custom domain</li>
+            <li><i class="fas fa-check"></i>Advanced analytics and reports</li>
+            <li><i class="fas fa-check"></i>High marketplace visibility</li>
+            <li><i class="fas fa-check"></i>5% fee per transaction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="ctaWrapper">
+      <div class="container">
+        <h2>Get notified when we launch</h2>
+        <form action="">
+          <input type="email" placeholder="Email address" />
+          <button>Get notified</button>
+        </form>
+      </div>
+    </div>
+    <script>
+        const btn = document.getElementById('btn')
+        const switchBtn = document.getElementById('switch')
+        const html = document.getElementById('html')
+
+        btn.addEventListener('click', () => {
+            if (switchBtn.classList.contains('down')) {
+                switchBtn.classList.remove('down')
+            } else {
+                switchBtn.classList.add('down')
+            }
+            if (html.classList.contains('invert')) {
+                html.classList.remove('invert')
+            } else {
+                html.classList.add('invert')
+            }
+        })
+    </script>
+  </body>
+</html>

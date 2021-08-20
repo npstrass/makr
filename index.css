@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+
+html {
+    transition: 200ms;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: url(images/bg2.svg), hsla(256, 100%, 6%, 1);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-blend-mode: lighten;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 4rem 0;
+}
+
+.header .container {
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: hsla(194, 100%, 50%, 1);
+  margin-right: 2em;
+}
+
+.logo::after {
+  position: absolute;
+  content: "";
+  bottom: -0.25rem;
+  right: -0.3em;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.2rem solid hsla(194, 100%, 50%, 1);
+  background: transparent;
+  mix-blend-mode: difference;
+}
+
+.logoText {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.heroWrapper {
+  padding: 6rem 0;
+}
+
+.heroWrapper .container {
+  flex-direction: column;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+span {
+  color: hsla(194, 100%, 50%, 1);
+}
+
+.heroWrapper p {
+  line-height: 2.125rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  position: relative;
+  height: 3rem;
+  width: 1.5rem;
+  border: 0.125rem solid hsla(194, 100%, 50%, 1);
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.switch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  background-color: hsla(194, 100%, 50%, 1);
+  transition: 500ms;
+}
+
+.featureWrapper {
+  padding: 6rem 0;
+}
+
+.featureWrapper .container {
+  flex-direction: column;
+}
+
+.featureContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.featureContent h3 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.featureContent p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  line-height: 2rem;
+}
+
+.featureContent .icon {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 4rem;
+  background-color: hsla(200, 100%, 20%, 1);
+  margin-right: 4rem;
+}
+
+.passions {
+  background: url(images/passion.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+.freedom {
+  background: url(images/money.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+.lifestyle {
+  background: url(images/sun-umbrella.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+.anywhere {
+  background: url(images/helicopter.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.pricingWrapper .container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.pricingWrapper h2 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.pricingWrapper .description {
+  font-size: 1.25rem;
+  margin: 0 auto 6rem;
+  max-width: 800px;
+  line-height: 2rem;
+}
+
+.priceBox {
+  width: 60%;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  padding: 3rem 2rem;
+  text-align: left;
+  border-radius: 1rem;
+}
+
+.priceBox:first-of-type {
+  position: relative;
+  background-color: hsla(200, 100%, 20%, 1);
+}
+
+.priceBox:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 0.25rem solid hsla(194, 100%, 50%, 1);
+}
+
+.priceBox:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 3rem;
+  height: 2rem;
+  width: 2rem;
+  border: 0.25rem solid hsla(194, 100%, 50%, 1);
+}
+
+.priceBox:last-of-type {
+  position: relative;
+  background-color: hsla(194, 100%, 50%, 1);
+  color: hsla(256, 100%, 6%, 1);
+}
+
+.priceBox:last-of-type::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 3.5rem;
+  transform: rotate(90deg);
+  height: 0rem;
+  width: 0rem;
+  border-top: 2rem solid transparent;
+  border-left: 2rem solid transparent;
+  border-bottom: 2rem solid hsla(200, 100%, 20%, 1);
+}
+
+.priceBox:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 3rem;
+  height: 3.5rem;
+  width: 2.5rem;
+  border: 0.25rem solid hsla(200, 100%, 20%, 1);
+}
+
+.priceBox ul {
+  list-style: none;
+  padding: 0;
+}
+
+.priceBox .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.priceBox p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.priceBox .price {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.priceBox .subText {
+  color: hsla(256, 100%, 6%, 0.35);
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.priceBox li {
+  margin-bottom: 2rem;
+}
+
+.priceBox li:last-of-type {
+  margin-bottom: 0;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+.ctaWrapper {
+  padding: 12rem 0;
+}
+
+.ctaWrapper .container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.ctaWrapper h2 {
+  font-size: 2rem;
+}
+
+.ctaWrapper form {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.ctaWrapper form > * {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+.ctaWrapper input {
+  height: 3rem;
+  width: 60%;
+  background-color: hsla(200, 100%, 20%, 1);
+}
+
+.ctaWrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.ctaWrapper button {
+  height: 3rem;
+  width: 30%;
+  background-color: hsla(194, 100%, 50%, 1);
+  color: hsla(256, 100%, 6%, 1);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .featureContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featureWrapper .icon {
+    transform: scale(0.75);
+    margin: 0 0 2rem;
+  }
+
+  .passions,
+  .anywhere,
+  .freedom,
+  .lifestyle {
+    background-size: 40%;
+  }
+}
+
+@media (max-width: 374px) {
+  form {
+    flex-direction: column;
+  }
+
+  button,
+  input {
+    display: block;
+    width: 100% !important;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
+.down {
+  top: 2.625rem;
+  transform: translate(-50%, -100%);
+}
+
+.invert {
+  filter: invert(1);
+}
